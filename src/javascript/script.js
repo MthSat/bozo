@@ -120,6 +120,7 @@ startGame.addEventListener('click',()=> {
         ShowBoard (player1_pontuation);
         scorePoints.disabled = 1;
         BlockBoard (0);
+        addPoints.disabled = 0;
     }
 });
 
@@ -148,7 +149,7 @@ newGame.addEventListener('click',()=> {
     BlockBoard (player1_pontuation);
     scorePoints.disabled = 1;
     BlockBoard (1);
-
+    addPoints.disabled = 1;
 });
 
 addPoints.addEventListener('click',()=> {
@@ -189,30 +190,30 @@ scorePoints.addEventListener('click',()=> {
     if (player1_total>player2_total){
 
         document.getElementById("result").innerHTML +=
-            "<div id=results>"+"<strong>"+
+            "<br><div id=result-win-player1>"+"<strong>"+
                 "Jogo Nº # "+ games + "</strong>" + "<br>" 
                 +player1_name+" VENCEU!"+ "<br>"
                 +player1_name +": "+"<strong>"+ player1_pontuation +" = "+player1_total+"</strong>"+ "<br>"
                 +player2_name +": "+"<strong>"+ player2_pontuation +" = "+player2_total+"</strong>"+ "<br>"
-            +"</div><br>";
+            +"</div>";
         games ++;
     } else if (player1_total<player2_total){
         document.getElementById("result").innerHTML +=
-        "<div id=results>"+"<strong>"+
+        "<br><div id=result-win-player2>"+"<strong>"+
             "Jogo Nº # "+ games + "</strong>" + "<br>" 
             +player2_name+" VENCEU!"+ "<br>"
             +player1_name +": "+"<strong>"+ player1_pontuation +" = "+player1_total+"</strong>"+ "<br>"
             +player2_name +": "+"<strong>"+ player2_pontuation +" = "+player2_total+"</strong>"+ "<br>"
-        +"</div><br>";
+        +"</div>";
     games ++;
     } else {
         document.getElementById("result").innerHTML +=
-        "<div id=results>"+"<strong>"+
+        "<br><div id=result-draw>"+"<strong>"+
             "Jogo Nº # "+ games + "</strong>" + "<br>" 
             +"EMPATE!"+ "<br>"
             +player1_name +": "+"<strong>"+ player1_pontuation +" = "+player1_total+"</strong>"+ "<br>"
             +player2_name +": "+"<strong>"+ player2_pontuation +" = "+player2_total+"</strong>"+ "<br>"
-        +"</div><br>";
+        +"</div>";
     games ++;
     }
 
