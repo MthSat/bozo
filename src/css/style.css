@@ -50,9 +50,13 @@ input{
     text-align: center;
     width: 60px;
     height: 60px;
-    font-size: 15px;
+    font-size: 30px;
     padding: 0px;
     margin: 0px;
+}
+
+input::placeholder{
+    font-size: 12px;
 }
 
 #result{
