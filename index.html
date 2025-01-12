@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/style2.css">
     <title>🎲 Bozó</title>
 </head>
 <body>
@@ -11,7 +11,6 @@
         <h1>Bozó 🎲</h1>
         
         <input id="player1" placeholder="Jogador 1"></input> <button id="name1" class="button name1">Pronto!</button><br>
-        <br>
         <input id="player2" placeholder="Jogador 2"></input> <button id="name2" class="button name2">Pronto!</button><br>
         <br>
         <button id="newplayer" class="button newplayer">Adicionar Jogador</button>
@@ -20,18 +19,18 @@
         <br>
         <p id="playerturn">Aguardando jogadores...</p>
         <div id="board">
-            <input type="number" class="board-number" id="one" placeholder="Às" disabled="true"></input>
-            <input type="number" class="board-number" id="full" placeholder="Full" disabled="true"></input>
-            <input type="number" class="board-number" id="four" placeholder="Quadra" disabled="true"></input>
-            <input type="number" class="board-number" id="two" placeholder="Duque" disabled="true"></input>
-            <input type="number" class="board-number" id="straight" placeholder="Seguida" disabled="true"></input>
-            <input type="number" class="board-number" id="five" placeholder="Quina" disabled="true"></input>
-            <input type="number" class="board-number" id="three" placeholder="Terno" disabled="true"></input>
-            <input type="number" class="board-number" id="square" placeholder="Quadrada" disabled="true"></input>
-            <input type="number" class="board-number" id="six" placeholder="Sena" disabled="true"></input>
-            <input type="number" class="board-number" id="general" placeholder="General" disabled="true"></input>
+            <input type="number" min="0" inputmode="numeric" class="board-number" id="one" placeholder="Às" disabled="true"></input>
+            <input type="number" min="0" inputmode="numeric" class="board-number" id="full" placeholder="Full" disabled="true"></input>
+            <input type="number" min="0" inputmode="numeric" class="board-number" id="four" placeholder="Quadra" disabled="true"></input>
+            <input type="number" min="0" inputmode="numeric" class="board-number" id="two" placeholder="Duque" disabled="true"></input>
+            <input type="number" min="0" inputmode="numeric" class="board-number" id="straight" placeholder="Seguida" disabled="true"></input>
+            <input type="number" min="0" inputmode="numeric" class="board-number" id="five" placeholder="Quina" disabled="true"></input>
+            <input type="number" min="0" inputmode="numeric" class="board-number" id="three" placeholder="Terno" disabled="true"></input>
+            <input type="number" min="0" inputmode="numeric" class="board-number" id="square" placeholder="Quadrada" disabled="true"></input>
+            <input type="number" min="0" inputmode="numeric" class="board-number" id="six" placeholder="Sena" disabled="true"></input>
+            <input type="number" min="0" inputmode="numeric" class="board-number" id="general" placeholder="General" disabled="true"></input>
         </div>
-        <br><br><br>
+        
         <button id="add" class="button add" disabled="true">Marcar</button>
         <button id="score" class="button score" disabled="true">Resultado</button>
 

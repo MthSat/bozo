@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+
+
+body{
+    font-family: "Poppins", sans-serif;
+    justify-content: center;
+    text-align: center;
+    background-color: #cecece;
+    color: #2b2b2b;
+    display: flex;
+}
+
+
+div{
+    max-width: 600px;
+}
+
+.board-number{
+    width: 70px;
+    height: 70px;
+    font-size: 30px;
+    text-align: center;
+    border: none;
+    background-color: transparent;
+
+}
+
+.board-number::-webkit-inner-spin-button,
+.board-number::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.board-number:focus{
+    outline: none;
+    background-image: radial-gradient(rgb(255, 255, 255), transparent,transparent);
+}
+
+input::placeholder{
+    font-size: 12px;
+    text-align: center;
+}
+
+#board{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+}
+
+#one{
+    border-bottom: 3px solid black;
+}
+
+#two{
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+}
+
+#three{
+    border-top: 3px solid black;
+}
+
+#four{
+    border-bottom: 3px solid black;
+}
+
+#five{
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+}
+
+#six{
+    border-top: 3px solid black;
+}
+
+#full{
+    border-right: 6px solid black;
+    border-left: 6px solid black;
+    border-bottom: 3px solid black;
+}
+
+#straight{
+    border-top: 3px solid black;
+    border-right: 6px solid black;
+    border-left: 6px solid black;
+    border-bottom: 3px solid black;    
+}
+
+#square{
+    border-top: 3px solid black;
+    border-right: 6px solid black;
+    border-left: 6px solid black;
+    border-bottom: 6px solid black;
+    border-radius: 3px solid black;
+    border-end-start-radius: 40%;
+    border-end-end-radius: 40%;
+}
+
+#general{
+    grid-column-start: 2;
+    border-right: 6px solid transparent;
+    border-left: 6px solid transparent;
+}
