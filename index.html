@@ -9,26 +9,29 @@
 <body>
     <div>
         <h1>Bozó 🎲</h1>
+        <div id="players">
+            <input id="color-player1" type="color" value="#6699ff"> <input id="player1" placeholder="Jogador 1"  autocomplete="off" ></input> <button id="name1" class="button name1">Pronto!</button>
+        </div>
+        <div id="players">
+            <input id="color-player2" type="color" value="#ff9966"> <input id="player2" placeholder="Jogador 2"  autocomplete="off" ></input> <button id="name2" class="button name2">Pronto!</button>
+        </div>
         
-        <input id="player1" placeholder="Jogador 1"></input> <button id="name1" class="button name1">Pronto!</button><br>
-        <input id="player2" placeholder="Jogador 2"></input> <button id="name2" class="button name2">Pronto!</button><br>
-        <br>
-        <button id="newplayer" class="button newplayer">Adicionar Jogador</button>
+        <button id="newplayer" class="button newplayer">Adicionar Jogador</button><br>
         <button id="start" class="button start">Jogar</button>
         <button id="newgame" class="button newgame" disabled="true">Novo Jogo</button>
-        <br>
+        
         <p id="playerturn">Aguardando jogadores...</p>
         <div id="board">
-            <input type="number" min="0" inputmode="numeric" class="board-number" id="one" placeholder="Às" disabled="true"></input>
-            <input type="number" min="0" inputmode="numeric" class="board-number" id="full" placeholder="Full" disabled="true"></input>
-            <input type="number" min="0" inputmode="numeric" class="board-number" id="four" placeholder="Quadra" disabled="true"></input>
-            <input type="number" min="0" inputmode="numeric" class="board-number" id="two" placeholder="Duque" disabled="true"></input>
-            <input type="number" min="0" inputmode="numeric" class="board-number" id="straight" placeholder="Seguida" disabled="true"></input>
-            <input type="number" min="0" inputmode="numeric" class="board-number" id="five" placeholder="Quina" disabled="true"></input>
-            <input type="number" min="0" inputmode="numeric" class="board-number" id="three" placeholder="Terno" disabled="true"></input>
-            <input type="number" min="0" inputmode="numeric" class="board-number" id="square" placeholder="Quadrada" disabled="true"></input>
-            <input type="number" min="0" inputmode="numeric" class="board-number" id="six" placeholder="Sena" disabled="true"></input>
-            <input type="number" min="0" inputmode="numeric" class="board-number" id="general" placeholder="General" disabled="true"></input>
+            <input type="number" min="0" inputmode="numeric" autocomplete="off" class="board-number" id="one" placeholder="Às" disabled="true"></input>
+            <input type="number" min="0" inputmode="numeric" autocomplete="off" class="board-number" id="full" placeholder="Full" disabled="true"></input>
+            <input type="number" min="0" inputmode="numeric" autocomplete="off" class="board-number" id="four" placeholder="Quadra" disabled="true"></input>
+            <input type="number" min="0" inputmode="numeric" autocomplete="off" class="board-number" id="two" placeholder="Duque" disabled="true"></input>
+            <input type="number" min="0" inputmode="numeric" autocomplete="off" class="board-number" id="straight" placeholder="Seguida" disabled="true"></input>
+            <input type="number" min="0" inputmode="numeric" autocomplete="off" class="board-number" id="five" placeholder="Quina" disabled="true"></input>
+            <input type="number" min="0" inputmode="numeric" autocomplete="off" class="board-number" id="three" placeholder="Terno" disabled="true"></input>
+            <input type="number" min="0" inputmode="numeric" autocomplete="off" class="board-number" id="square" placeholder="Quadrada" disabled="true"></input>
+            <input type="number" min="0" inputmode="numeric" autocomplete="off" class="board-number" id="six" placeholder="Sena" disabled="true"></input>
+            <input type="number" min="0" inputmode="numeric" autocomplete="off" class="board-number" id="general" placeholder="General" disabled="true"></input>
         </div>
         
         <button id="add" class="button add" disabled="true">Marcar</button>
