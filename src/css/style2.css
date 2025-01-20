@@ -9,6 +9,9 @@
 
 #master{
     width: 400px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 body{
@@ -21,9 +24,12 @@ body{
 }
 
 button{
-    font-size: 16px;
+    font-size: 20px;
     height: 35px;
     margin: 2px;
+    background-color: #2b2b2b;
+    color: #cecece;
+    border-radius: 10px;
 }
 
 input{
@@ -47,15 +53,19 @@ input{
 #newplayer{
     margin-block-start: 10px;
     margin-block-end: 10px;
+    width: 250px;
+    height: 50px;
+
 }
 
 #start,#newgame{
-    width: 100px;
+    width: 150px;
+    height: 50px;
 
 }
 
 #playerturn{
-    margin: auto;  
+    margin: 30px auto;  
     width: 380px;
     font-size: 25px;
     font-weight: bold;
@@ -100,9 +110,12 @@ div{
 }
 
 #board{
+    width: 350px;
     display: grid;
     grid-template-columns: auto auto auto;
     justify-content: center;
+    margin: auto;
+
 }
 
 #one{
@@ -164,7 +177,9 @@ div{
 
 #add,#score{
     margin-block: 10px;
-    width: 100px;
+    width: 150px;
+    height: 50px;
+
 }
 
 #results{

@@ -187,8 +187,8 @@ addPoints.addEventListener('click',()=> {
         scorePoints.disabled = 0;
         turn = 2;
         BlockBoard (1);
+        document.documentElement.style.setProperty('--board-color', "#000000");
         document.documentElement.style.setProperty('--board-border', "#9b9b9b");
-
     }
     if (turn === 0) {
         AddPoints (player1_pontuation);
