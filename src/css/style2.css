@@ -7,6 +7,10 @@
     --board-border: #9b9b9b;
   }
 
+#master{
+    width: 400px;
+}
+
 body{
     font-family: "Poppins", sans-serif;
     justify-content: center;
@@ -36,6 +40,7 @@ input{
 #players{
     display: flex;
     align-items: center;
+    justify-content: center;
 
 }
 
@@ -50,6 +55,8 @@ input{
 }
 
 #playerturn{
+    margin: auto;  
+    width: 380px;
     font-size: 25px;
     font-weight: bold;
     color: var(--board-color);
