@@ -11,15 +11,17 @@
 </head>
 <body>
     <div id="master">
-        <h1>Marcador de Bozó 2.0</h1>
-        <div id="players">
-            <input id="color-player1" type="color" value="#6699ff"> <input id="player1" placeholder="Jogador 1"  autocomplete="off" ></input> <button id="name1" class="button name1">OK</button>
-        </div>
-        <div id="players">
-            <input id="color-player2" type="color" value="#ff9966"> <input id="player2" placeholder="Jogador 2"  autocomplete="off" ></input> <button id="name2" class="button name2">OK</button>
-        </div>
-        
-        <button id="newplayer" class="button newplayer">Adicionar Jogador</button><br>
+        <h1>Marcador de Bozó 3.0 [beta]</h1>
+        <div id="container">
+            <div class="input-group">
+                <input type="color" id="colorPicker" value="#ffffff">
+                <input type="text" id="nomeJogador" placeholder="Digite o nome do jogador">
+                <button id="btnAdicionar">OK</button>
+            </div>
+            <ul id="listaJogadores"></ul>
+            <!-- Exemplo de como mostrar a quantidade total de jogadores -->
+            <p id="totalJogadores">Total de Jogadores: 0</p>
+          </div>
         <button id="start" class="button start">Jogar</button>
         <button id="newgame" class="button newgame" disabled="true">Novo Jogo</button>
         

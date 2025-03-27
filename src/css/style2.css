@@ -38,7 +38,7 @@ input{
     height: 30px;
 }
 
-#color-player1,#color-player2{
+#color-player1,#color-player2,#color-player3{
     margin: 2px;
     height: 35px;
 }
@@ -219,3 +219,14 @@ div{
     flex-grow: 1;
     font-size: 14px;
 }
+
+ul {
+    list-style: none;
+    margin-top: 20px;
+    padding: 0;
+  }
+  
+  li {
+    padding: 5px 0;
+    border-bottom: 1px solid #ccc;
+  }
