@@ -1,0 +1,100 @@
+<!-- base-structure.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogar</title>
+    <!-- Link para CSS compartilhado -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- 1. HEADER -->
+    <header>
+        <nav class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="jogar.html">Jogar</a></li>
+                <li><a href="resultados.html">Resultados</a></li>
+                <li><a href="sair.html">Sair</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 2. MAIN CONTENT -->
+    <main class="container">
+
+        <h2>Marcador</h2>
+        <div id="container">
+            <div class="input-group">
+                <input type="color" id="colorPicker" value="#ffffff">
+                <input type="text" id="nomeJogador" placeholder="Digite o nome do jogador">
+                <button id="btnAdicionar">OK</button>
+            </div>
+            <ul id="listaJogadores"></ul>
+            <!-- Exemplo de como mostrar a quantidade total de jogadores -->
+            <p id="totalJogadores">Total de Jogadores: 0</p>
+        </div>
+        <button id="start" class="button start">Jogar</button>
+        <button id="newgame" class="button newgame" disabled="true">Novo Jogo</button>
+
+        <p id="playerturn">Aguardando jogadores...</p>
+        <div id="board">
+            <input type="number" min="0" inputmode="numeric" autocomplete="off" class="board-number" id="one"
+                placeholder="Às" disabled="true"></input>
+            <input type="number" min="0" inputmode="numeric" autocomplete="off" class="board-number" id="full"
+                placeholder="Full" disabled="true"></input>
+            <input type="number" min="0" inputmode="numeric" autocomplete="off" class="board-number" id="four"
+                placeholder="Quadra" disabled="true"></input>
+            <input type="number" min="0" inputmode="numeric" autocomplete="off" class="board-number" id="two"
+                placeholder="Duque" disabled="true"></input>
+            <input type="number" min="0" inputmode="numeric" autocomplete="off" class="board-number" id="straight"
+                placeholder="Seguida" disabled="true"></input>
+            <input type="number" min="0" inputmode="numeric" autocomplete="off" class="board-number" id="five"
+                placeholder="Quina" disabled="true"></input>
+            <input type="number" min="0" inputmode="numeric" autocomplete="off" class="board-number" id="three"
+                placeholder="Terno" disabled="true"></input>
+            <input type="number" min="0" inputmode="numeric" autocomplete="off" class="board-number" id="square"
+                placeholder="Quadrada" disabled="true"></input>
+            <input type="number" min="0" inputmode="numeric" autocomplete="off" class="board-number" id="six"
+                placeholder="Sena" disabled="true"></input>
+            <input type="number" min="0" inputmode="numeric" autocomplete="off" class="board-number" id="general"
+                placeholder="General" disabled="true"></input>
+        </div>
+
+        <button id="add" class="button add" disabled="true">Marcar</button>
+        <button id="score" class="button score" disabled="true">Resultado</button>
+
+        <br>
+        <strong>Resultados:</strong>
+        <div id="results">
+            <div id="result"></div>
+        </div>
+
+
+    </main>
+
+    <!-- 3. FOOTER -->
+    <footer>
+        <div class="footer-container container">
+            <ul class="social-links">
+                <li><a href="https://twitter.com/seuPerfil" target="_blank" rel="noopener">Twitter</a></li>
+                <li><a href="https://github.com/seuPerfil" target="_blank" rel="noopener">GitHub</a></li>
+                <li><a href="https://instagram.com/seuPerfil" target="_blank" rel="noopener">Instagram</a></li>
+            </ul>
+            <a href="https://www.buymeacoffee.com/seuPerfil" class="coffee-link" target="_blank" rel="noopener">Me pague
+                um café ☕</a>
+            <p class="footer-rights">© 2025 Matheus Saturnino. Todos os direitos reservados.</p>
+            <p class="site-version">Versão 3.0</p>
+
+        </div>
+    </footer>
+
+    <!-- Scripts compartilhados -->
+    <script src="js/bozo.js"></script>
+</body>
+
+</html>
