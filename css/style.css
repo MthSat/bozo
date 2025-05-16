@@ -140,6 +140,12 @@ button:active {
   transform: scale(0.98);
 }
 
+.g_id_signin {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+}
+
 /* ----- 4. HEADER ----- */
 header {
     background: var(--color-header);

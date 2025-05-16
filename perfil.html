@@ -5,9 +5,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sair</title>
+    <title>Perfil</title>
     <!-- Link para CSS compartilhado -->
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
 </head>
 
 <body>
@@ -19,15 +20,24 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="jogar.html">Jogar</a></li>
                 <li><a href="resultados.html">Resultados</a></li>
-                <li><a href="sair.html">Sair</a></li>
+                <li><a href="perfil.html">Perfil</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- 2. MAIN CONTENT -->
     <main class="container">
-        <h2>Sair</h2>
-        <p>Você saiu do marcador de Bozó. Até a próxima!</p>
+        <h2>Perfil</h2>
+        <p>Aqui você poderá conectar com sua conta google e fazer backup dos seus jogos.</p>
+
+        <div id="g_id_onload" data-client_id="266232936590-bedibnbpg17a66u9in6gtb4v4o7jh2n3.apps.googleusercontent.com" data-context="signin" data-ux_mode="popup"
+            data-callback="handleCredentialResponse" data-auto_prompt="false">
+        </div>
+
+        <div class="g_id_signin" data-type="standard" data-shape="rectangular" data-theme="filled_black"
+            data-text="signin_with" data-size="large" data-logo_alignment="left">
+        </div>
+
     </main>
 
     <!-- 3. FOOTER -->
