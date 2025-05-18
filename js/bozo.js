@@ -226,7 +226,7 @@ scorePoints.addEventListener('click', () => {
 
     // Cor de fundo
     const empate = vencedores.length > 1;
-    const corFundo = empate ? '#cccccc' : `${jogadores[0].corSelecionada}70`;
+    const corFundo = empate ? '#cccccc' : `${vencedores[0].corSelecionada}70`;
 
     let html = `<br><div class="result-win" style="background-color: ${corFundo}; padding: 10px; border-radius: 8px;">`;
     html += `<strong>${formatado}</strong><br>`;
@@ -245,6 +245,7 @@ scorePoints.addEventListener('click', () => {
 
     html += `</div>`;
     document.getElementById("result").innerHTML += html;
+    
     scrollToBottom();
 
 
@@ -258,16 +259,21 @@ scorePoints.addEventListener('click', () => {
 
     const historico = JSON.parse(localStorage.getItem("historicoJogos")) || [];
 
-    historico.push({
-        dataHora: formatado,
-        vencedores: vencedores.map(j => ({ nome: j.nome, total: j.total })),
+        historico.push({
+        dataHora: new Date().toLocaleString("pt-BR"), // já estamos salvando a data
+        vencedores: vencedores.map(j => ({
+            nome: j.nome,
+            total: j.total,
+            cor: j.corSelecionada  // <-- SALVA a cor do vencedor aqui
+        })),
         jogadores: jogadores.map(j => ({
             nome: j.nome,
-            pontuacao: [...j.pontuacao],
             total: j.total,
-            cor: j.corSelecionada
+            cor: j.corSelecionada,
+            pontuacao: j.pontuacao
         }))
-    });
+        });
+
 
     localStorage.setItem("historicoJogos", JSON.stringify(historico));
 

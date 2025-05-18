@@ -355,3 +355,22 @@ footer {
     border-right: 6px solid transparent;
     border-left: 6px solid transparent;
 }
+
+.compartilhar-btn, .exportar-btn {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s;
+}
+
+.compartilhar-btn:hover, .exportar-btn:hover {
+  background-color: #555;
+}
+
+.historico-item{
+    align-items: center;
+}

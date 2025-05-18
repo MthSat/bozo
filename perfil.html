@@ -5,6 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="dado.png" type="image/x-icon">
     <title>Perfil</title>
     <!-- Link para CSS compartilhado -->
     <link rel="stylesheet" href="css/style.css">
@@ -30,13 +31,13 @@
         <h2>Perfil</h2>
         <p>Aqui você poderá conectar com sua conta google e fazer backup dos seus jogos.</p>
 
-        <div id="g_id_onload" data-client_id="266232936590-bedibnbpg17a66u9in6gtb4v4o7jh2n3.apps.googleusercontent.com" data-context="signin" data-ux_mode="popup"
-            data-callback="handleCredentialResponse" data-auto_prompt="false">
-        </div>
+        <!-- Botão do Google aparecerá aqui -->
+        <div id="googleSignInDiv"></div>
+        <div id="g_id_signin"></div>
 
-        <div class="g_id_signin" data-type="standard" data-shape="rectangular" data-theme="filled_black"
-            data-text="signin_with" data-size="large" data-logo_alignment="left">
-        </div>
+
+        <!-- Exibir resultado -->
+        <div id="perfil"></div>
 
     </main>
 
@@ -44,19 +45,19 @@
     <footer>
         <div class="footer-container container">
             <ul class="social-links">
-                <li><a href="https://twitter.com/seuPerfil" target="_blank" rel="noopener">Twitter</a></li>
-                <li><a href="https://github.com/seuPerfil" target="_blank" rel="noopener">GitHub</a></li>
-                <li><a href="https://instagram.com/seuPerfil" target="_blank" rel="noopener">Instagram</a></li>
+                <li><a href="https://www.linkedin.com/in/matheus-saturnino" target="_blank" rel="noopener">Linkedin</a></li>
+                <li><a href="https://github.com/MthSat/bozo?tab=readme-ov-file#-marcador-de-boz%C3%B3" target="_blank" rel="noopener">GitHub</a></li>
+                <li><a href="https://www.instagram.com/mthsaturnino/#" target="_blank" rel="noopener">Instagram</a></li>
             </ul>
-            <a href="https://www.buymeacoffee.com/seuPerfil" class="coffee-link" target="_blank" rel="noopener">Me pague
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&t=1s" class="coffee-link" target="_blank" rel="noopener">Me pague
                 um café ☕</a>
             <p class="footer-rights">© 2025 Matheus Saturnino. Todos os direitos reservados.</p>
-            <p class="site-version">Versão 3.0</p>
+            <p class="site-version">Versão 3.1</p>
         </div>
     </footer>
 
     <!-- Scripts compartilhados -->
-    <script src="js/script.js"></script>
+    <script src="js/script-perfil.js"></script>
 </body>
 
 </html>
